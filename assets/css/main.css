@@ -1166,11 +1166,12 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
-		min-height: 70vh;
+		min-height: 100vh;
 		background-image: url("../../images/59220008.JPG");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		background-attachment:fixed;
 		border-top: 0;
 		position: relative;
 		text-align: center;
@@ -1368,6 +1369,24 @@
 				}
 
 			}
+
+		#main .inner h2 {
+			color: rgba(0, 0, 0, 0.3);
+			font-size: 3em;
+			font-family: 'Passion One', cursive;
+			text-align: center;
+		}
+
+		#main .inner #more{
+			padding: 0 0.3em;
+			display: table; margin-left: auto; margin-right: auto;
+			color: rgba(0, 0, 0, 0.3);
+			font-size: 1.5em;
+			font-family: 'Passion One', cursive;
+			text-align: center;
+			border: 2px solid rgba(0, 0, 0, 0.3);
+			border-radius: 10px;
+		}
 
 /* Footer
 background-color: #1b1b1f;
