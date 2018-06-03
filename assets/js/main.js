@@ -62,6 +62,7 @@
 					}
 
 				// Video check.
+				/*
 					var video = $banner.data('video');
 
 					if (video)
@@ -77,6 +78,7 @@
 									$banner.append('<video autoplay loop><source src="' + video + '.mp4" type="video/mp4" /><source src="' + video + '.webm" type="video/webm" /></video>');
 
 						});
+				*/
 
 				// More button.
 					$banner.find('.more')
