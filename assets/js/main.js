@@ -19,6 +19,19 @@
 		var $window = $(window),
 			$body = $('body');
 
+		// Menu scroll fadein
+		/*
+		var menuPosition = 800; // 하단에 메뉴 표시할 스크롤 위치값 지정
+		$(window).scroll(function(){
+			var num = $(window).scrollTop();
+				if(num > menuPosition){
+					$("#menu").css('background-color', 'rgba(0, 0, 0, 0.8)');
+				}else{
+					$("#menu").css('background-color', 'rgba(0, 0, 0, 0)');
+				}
+		});
+		*/
+
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 

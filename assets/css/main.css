@@ -1150,6 +1150,22 @@
 
 		}
 
+/* Menu */
+	#menu{
+		position: fixed;
+		z-index: 10;
+		text-align: right;
+		width: 100%;
+		top: 0; left: 0;
+		padding: 0.5em;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	#menu .menu_list{
+		display: inline;
+		margin-right: 0.5em;
+	}
+
 /* Banner */
 
 	#banner {
