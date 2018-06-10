@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
+@import url(font-track.css);
+@import url(font-godo.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Passion+One:400");
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:300'); /*고딕A1*/
+@import url('http://fonts.googleapis.com/earlyaccess/jejugothic.css'); /*제주고딕*/
 
 /*
 	Full Motion by TEMPLATED
@@ -171,6 +175,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
+		font-family: 'Track' !important;
 		font-weight: 400;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -562,6 +567,10 @@
 		.box .inner {
 			padding: 1.5em;
 			width: 100% !important;
+		}
+
+		.box .inner h3{
+			font-family: 'Jeju Gothic', serif;
 		}
 
 			@media screen and (max-width: 480px) {
@@ -1150,20 +1159,6 @@
 
 		}
 
-/* Menu */
-	#menu{
-		width: 100%;
-		top: 0; left: 0;
-		text-align: right;
-		padding: 0.7em;
-		background: none;
-	}
-
-	#menu .menu_list{
-		display: inline;
-		margin-right: 0.5em;
-		font-size: 1.5em;
-	}
 
 /* Banner */
 
@@ -1182,7 +1177,7 @@
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
 		min-height: 100vh;
-		background-image: url("../../images/59220008.JPG");
+		background-image: url("../../images/008.JPG");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1350,14 +1345,7 @@
 		}
 
 /* Main */
-
-	#main {
-
-		background-image: url('../../images/bg.jpg');
-		z-index: -1;
-	}
-
-	#main-background-color{
+	.main-background-color{
 		padding: 4em 0 2em 0;
 		background-color: rgba(255, 255, 255, 0.9);
 		z-index: 1;
@@ -1365,13 +1353,13 @@
 
 		@media screen and (max-width: 736px) {
 
-			#main {
+			.main {
 				padding: 3em 0 1em 0;
 			}
 
 		}
 
-		#main .inner {
+		.main .inner {
 			width: 90%;
 			max-width: 80em;
 			margin: 0 auto;
@@ -1379,20 +1367,60 @@
 
 			@media screen and (max-width: 480px) {
 
-				#main .inner {
+				.main .inner {
 					width: 95%;
 				}
 
 			}
 
-		#main .inner h2 {
+		.main .inner h2 {
 			color: rgba(0, 0, 0, 0.3);
-			font-size: 3em;
+			font-size: 1.8em;
 			font-family: 'Passion One', cursive;
 			text-align: center;
 		}
 
-		#main .inner #more{
+		#main_introduce{
+			background-image: url('../../images/bg.jpg')
+		}
+
+		#main_introduce .introduce_grid{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-column-gap: 2em;
+		}
+
+		#main_introduce .introduce_grid .introduce_box{
+			text-align: center;
+		}
+
+		#main_introduce .introduce_grid .introduce_box img{
+			width: 16%;
+		}
+
+		#main_introduce .introduce_grid .introduce_box h3{
+			color: #ff9185;
+			/*font-family: 'Jeju Gothic', serif;*/
+			font-family: 'GodoM' !important;
+			font-size: 1.2em
+		}
+
+		#main_introduce .introduce_grid .introduce_box p{
+			color: black;
+			font-family: 'Gothic A1', sans-serif;
+		}
+
+		#main_photos{
+			background-color: #ff9185;
+			height: 50%;
+		}
+
+		#main_videos {
+			background-image: url('../../images/bg.jpg');
+			z-index: -1;
+		}
+
+		#main_videos .inner #more{
 			padding: 0 0.3em;
 			display: table; margin-left: auto; margin-right: auto;
 			color: rgba(0, 0, 0, 0.3);
